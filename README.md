@@ -6,7 +6,7 @@
    
    `pip install yfinance pandas requests eventregistry dotenv`
    
-3. Make an account at https://eventregistry.org/ and get your API Key
+3. Make an account at https://newsapi.ai/?gad_source=1&gad_campaignid=16130462799&gbraid=0AAAAADFDRCBOrOJiVD8k6jG7EOYwSqu8n&gclid=CjwKCAiA2PrMBhA4EiwAwpHyC2DTAJA_6FDwgzVWrl-2rPuCmPz3TLa40HouGxL9m99Fu2CwxsLdlhoCtdwQAvD_BwE and get your API Key
  
 5. Set your EventRegistry API Key
 
