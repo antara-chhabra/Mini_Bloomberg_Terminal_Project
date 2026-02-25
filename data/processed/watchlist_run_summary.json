@@ -1,7 +1,7 @@
 {
-  "run_at": "2026-02-24T22:23:12.642100",
+  "run_at": "2026-02-25T00:02:40.225156",
   "tickers": [
-    "META"
+    "NFLX"
   ],
   "pipelines": [
     "p1",
@@ -11,7 +11,7 @@
   ],
   "results": [
     {
-      "ticker": "META",
+      "ticker": "NFLX",
       "status": "ok"
     }
   ]

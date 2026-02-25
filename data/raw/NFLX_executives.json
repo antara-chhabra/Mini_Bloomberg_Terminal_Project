@@ -8,7 +8,7 @@
     "exercised_value": 206021120,
     "unexercised_value": 1415606272,
     "source": "yfinance",
-    "fetched_at": "2026-02-22T20:34:31.226694"
+    "fetched_at": "2026-02-24T23:03:07.167629"
   },
   {
     "ticker": "NFLX",
@@ -19,7 +19,7 @@
     "exercised_value": 32708016,
     "unexercised_value": 427340448,
     "source": "yfinance",
-    "fetched_at": "2026-02-22T20:34:31.226704"
+    "fetched_at": "2026-02-24T23:03:07.167629"
   },
   {
     "ticker": "NFLX",
@@ -30,7 +30,7 @@
     "exercised_value": 26574712,
     "unexercised_value": 204458736,
     "source": "yfinance",
-    "fetched_at": "2026-02-22T20:34:31.226707"
+    "fetched_at": "2026-02-24T23:03:07.167629"
   },
   {
     "ticker": "NFLX",
@@ -41,7 +41,7 @@
     "exercised_value": 0,
     "unexercised_value": 107027248,
     "source": "yfinance",
-    "fetched_at": "2026-02-22T20:34:31.226710"
+    "fetched_at": "2026-02-24T23:03:07.167629"
   },
   {
     "ticker": "NFLX",
@@ -52,7 +52,7 @@
     "exercised_value": 38790456,
     "unexercised_value": 87438464,
     "source": "yfinance",
-    "fetched_at": "2026-02-22T20:34:31.226713"
+    "fetched_at": "2026-02-24T23:03:07.167629"
   },
   {
     "ticker": "NFLX",
@@ -63,7 +63,7 @@
     "exercised_value": 0,
     "unexercised_value": 0,
     "source": "yfinance",
-    "fetched_at": "2026-02-22T20:34:31.226715"
+    "fetched_at": "2026-02-24T23:03:07.167629"
   },
   {
     "ticker": "NFLX",
@@ -74,7 +74,7 @@
     "exercised_value": 0,
     "unexercised_value": 0,
     "source": "yfinance",
-    "fetched_at": "2026-02-22T20:34:31.226718"
+    "fetched_at": "2026-02-24T23:03:07.167629"
   },
   {
     "ticker": "NFLX",
@@ -85,7 +85,7 @@
     "exercised_value": 0,
     "unexercised_value": 0,
     "source": "yfinance",
-    "fetched_at": "2026-02-22T20:34:31.226720"
+    "fetched_at": "2026-02-24T23:03:07.167629"
   },
   {
     "ticker": "NFLX",
@@ -96,7 +96,7 @@
     "exercised_value": 0,
     "unexercised_value": 0,
     "source": "yfinance",
-    "fetched_at": "2026-02-22T20:34:31.226722"
+    "fetched_at": "2026-02-24T23:03:07.167629"
   },
   {
     "ticker": "NFLX",
@@ -107,6 +107,6 @@
     "exercised_value": 0,
     "unexercised_value": 0,
     "source": "yfinance",
-    "fetched_at": "2026-02-22T20:34:31.226724"
+    "fetched_at": "2026-02-24T23:03:07.167629"
   }
 ]

@@ -25,12 +25,26 @@ Pipelines:
     p3 — News & Sentiment          (hourly)
     p4 — Executives & Ownership    (weekly)
 """
-
+import sys
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
 import argparse
 import json
 import time
 from datetime import datetime
 from pathlib import Path
+import math
+
+def sanitize(obj):
+    """Replace NaN/Inf with None for valid JSON output."""
+    if isinstance(obj, float) and (math.isnan(obj) or math.isinf(obj)):
+        return None
+    if isinstance(obj, dict):
+        return {k: sanitize(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [sanitize(v) for v in obj]
+    return obj
+
 
 from ingestion.core.config import PROC_DIR, DEFAULT_TICKERS
 from ingestion.core.utils import get_logger
@@ -54,9 +68,9 @@ PIPELINE_MAP = {
 def run_all_pipelines(ticker: str, pipelines: list[str], force: bool = False) -> dict:
     """Run selected pipelines for a single ticker."""
     ticker = ticker.upper()
-    log.info(f"{'═'*55}")
+    log.info(f"{'='*55}")
     log.info(f"INGESTION START: {ticker}  pipelines={pipelines}")
-    log.info(f"{'═'*55}")
+    log.info(f"{'='*55}")
 
     results = {"ticker": ticker, "started_at": datetime.now().isoformat()}
 
@@ -77,8 +91,8 @@ def run_all_pipelines(ticker: str, pipelines: list[str], force: bool = False) ->
     out = PROC_DIR / f"{ticker}_ingestion_run.json"
     with open(out, "w") as f:
         json.dump(
-            {k: v for k, v in results.items() if k not in ("ticker",)
-             or isinstance(v, str)},
+            sanitize({k: v for k, v in results.items() if k not in ("ticker",)
+             or isinstance(v, str)}),
             f, indent=2, default=str
         )
     log.info(f"[{ticker}] Run summary -> {out.name}")
@@ -107,7 +121,7 @@ def run_watchlist(tickers: list[str], pipelines: list[str], force: bool = False)
         "pipelines": pipelines,
         "results":   summary,
     }, indent=2))
-    log.info(f"Watchlist complete. Summary → {out.name}")
+    log.info(f"Watchlist complete. Summary -> {out.name}")
     return summary
 
 

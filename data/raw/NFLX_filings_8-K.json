@@ -9,7 +9,7 @@
     "description": "8-K",
     "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000033/nflx-20260120.htm",
     "source": "sec_edgar",
-    "fetched_at": "2026-02-24T21:58:12.078621"
+    "fetched_at": "2026-02-24T23:02:54.926242"
   },
   {
     "ticker": "NFLX",
@@ -21,7 +21,7 @@
     "description": "8-K",
     "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000119312526015951/d37713d8k.htm",
     "source": "sec_edgar",
-    "fetched_at": "2026-02-24T21:58:12.078621"
+    "fetched_at": "2026-02-24T23:02:54.926242"
   },
   {
     "ticker": "NFLX",
@@ -33,7 +33,7 @@
     "description": "8-K",
     "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000119312525327462/d82688d8k.htm",
     "source": "sec_edgar",
-    "fetched_at": "2026-02-24T21:58:12.078621"
+    "fetched_at": "2026-02-24T23:02:54.926242"
   },
   {
     "ticker": "NFLX",
@@ -45,7 +45,7 @@
     "description": "8-K",
     "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000119312525308651/d65144d8k.htm",
     "source": "sec_edgar",
-    "fetched_at": "2026-02-24T21:58:12.078621"
+    "fetched_at": "2026-02-24T23:02:54.926242"
   },
   {
     "ticker": "NFLX",
@@ -57,7 +57,7 @@
     "description": "8-K",
     "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000450/nflx-20251114.htm",
     "source": "sec_edgar",
-    "fetched_at": "2026-02-24T21:58:12.078621"
+    "fetched_at": "2026-02-24T23:02:54.926242"
   },
   {
     "ticker": "NFLX",
@@ -69,7 +69,7 @@
     "description": "8-K",
     "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000408/nflx-20251030.htm",
     "source": "sec_edgar",
-    "fetched_at": "2026-02-24T21:58:12.078621"
+    "fetched_at": "2026-02-24T23:02:54.926242"
   },
   {
     "ticker": "NFLX",
@@ -81,7 +81,7 @@
     "description": "8-K",
     "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000407/nflx-20251030.htm",
     "source": "sec_edgar",
-    "fetched_at": "2026-02-24T21:58:12.078621"
+    "fetched_at": "2026-02-24T23:02:54.926242"
   },
   {
     "ticker": "NFLX",
@@ -93,7 +93,7 @@
     "description": "8-K",
     "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000404/nflx-20251021.htm",
     "source": "sec_edgar",
-    "fetched_at": "2026-02-24T21:58:12.078621"
+    "fetched_at": "2026-02-24T23:02:54.926242"
   },
   {
     "ticker": "NFLX",
@@ -105,7 +105,7 @@
     "description": "8-K",
     "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000322/nflx-20250717.htm",
     "source": "sec_edgar",
-    "fetched_at": "2026-02-24T21:58:12.078621"
+    "fetched_at": "2026-02-24T23:02:54.926242"
   },
   {
     "ticker": "NFLX",
@@ -117,6 +117,6 @@
     "description": "8-K",
     "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000287/nflx-20250622.htm",
     "source": "sec_edgar",
-    "fetched_at": "2026-02-24T21:58:12.078621"
+    "fetched_at": "2026-02-24T23:02:54.926242"
   }
 ]

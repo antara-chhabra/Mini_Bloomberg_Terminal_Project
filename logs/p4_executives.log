@@ -4,6 +4,7 @@
 2026-02-20 04:08:54,527  INFO      p4_executives  [AMZN] institutions: fetching...
 2026-02-20 10:06:14,538  INFO      p4_executives  [NVDA] executives: fetching...
 2026-02-20 10:06:14,652  INFO      p4_executives  [NVDA] institutions: fetching...
+<<<<<<< HEAD
 2026-02-22 20:34:31,059  INFO      p4_executives  [NFLX] executives: fetching...
 2026-02-22 20:34:31,232  INFO      p4_executives  [NFLX] institutions: fetching...
 2026-02-24 21:56:42,968  INFO      p4_executives  [MSFT] executives: cache hit
@@ -16,3 +17,39 @@
 2026-02-24 22:19:36,958  INFO      p4_executives  [CRM] institutions: fetching...
 2026-02-24 22:23:11,638  INFO      p4_executives  [META] executives: fetching...
 2026-02-24 22:23:11,758  INFO      p4_executives  [META] institutions: fetching...
+=======
+2026-02-20 17:08:20,204  INFO      p4_executives  ── P4 START: AAPL ──
+2026-02-20 17:08:20,204  INFO      p4_executives  [AAPL] executives: cache hit
+2026-02-20 17:08:20,205  INFO      p4_executives  [AAPL] institutions: cache hit
+2026-02-20 17:08:20,206  INFO      p4_executives  ── P4 DONE: AAPL ──
+2026-02-20 17:55:55,021  INFO      p4_executives  ── P4 START: AAPL ──
+2026-02-20 17:55:55,021  INFO      p4_executives  [AAPL] executives: cache hit
+2026-02-20 17:55:55,022  INFO      p4_executives  [AAPL] institutions: cache hit
+2026-02-20 17:55:55,022  INFO      p4_executives  ── P4 DONE: AAPL ──
+2026-02-20 17:58:11,763  INFO      p4_executives  ── P4 START: NFLX ──
+2026-02-20 17:58:11,763  INFO      p4_executives  [NFLX] executives: fetching...
+2026-02-20 17:58:11,763  ERROR     p4_executives  [NFLX] executives: failed — No module named 'yfinance'
+2026-02-20 17:58:11,763  INFO      p4_executives  [NFLX] institutions: fetching...
+2026-02-20 17:58:11,763  ERROR     p4_executives  [NFLX] institutions: failed — No module named 'yfinance'
+2026-02-20 17:58:11,764  INFO      p4_executives  ── P4 DONE: NFLX ──
+>>>>>>> 42cf9682ffda9902bcefaac70ae262921ce4a621
+2026-02-24 22:40:22,743  INFO      p4_executives  [AMD] executives: fetching...
+2026-02-24 22:40:22,868  INFO      p4_executives  [AMD] institutions: fetching...
+2026-02-24 22:45:34,375  INFO      p4_executives  [NFLX] executives: cache hit
+2026-02-24 22:45:34,591  INFO      p4_executives  [NFLX] institutions: cache hit
+2026-02-24 23:03:06,936  INFO      p4_executives  [NFLX] executives: fetching...
+2026-02-24 23:03:07,184  INFO      p4_executives  [NFLX] institutions: fetching...
+2026-02-24 23:13:09,428  INFO      p4_executives  [NFLX] executives: cache hit
+2026-02-24 23:13:09,468  INFO      p4_executives  [NFLX] institutions: cache hit
+2026-02-24 23:22:59,678  INFO      p4_executives  -- P4 START: NFLX --
+2026-02-24 23:22:59,678  INFO      p4_executives  [NFLX] executives: cache hit
+2026-02-24 23:22:59,678  INFO      p4_executives  [NFLX] institutions: cache hit
+2026-02-24 23:22:59,686  INFO      p4_executives  -- P4 DONE: NFLX --
+2026-02-24 23:58:53,822  INFO      p4_executives  -- P4 START: NFLX --
+2026-02-24 23:58:53,825  INFO      p4_executives  [NFLX] executives: cache hit
+2026-02-24 23:58:53,826  INFO      p4_executives  [NFLX] institutions: cache hit
+2026-02-24 23:58:53,829  INFO      p4_executives  -- P4 DONE: NFLX --
+2026-02-25 00:02:39,582  INFO      p4_executives  -- P4 START: NFLX --
+2026-02-25 00:02:39,588  INFO      p4_executives  [NFLX] executives: cache hit
+2026-02-25 00:02:39,591  INFO      p4_executives  [NFLX] institutions: cache hit
+2026-02-25 00:02:39,594  INFO      p4_executives  -- P4 DONE: NFLX --

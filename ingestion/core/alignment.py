@@ -217,7 +217,7 @@ def align(
     aligned = aligned.loc[start_dt:end_dt]
 
     log.info(f"[{ticker}] aligned: {len(aligned)} rows × {len(aligned.columns)} cols "
-             f"({start_dt.date()} → {end_dt.date()})")
+             f"({start_dt.date()} -> {end_dt.date()})")
     return aligned
 
 

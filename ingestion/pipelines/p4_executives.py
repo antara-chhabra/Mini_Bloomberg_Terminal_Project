@@ -48,7 +48,7 @@ def fetch_executives(ticker: str, force: bool = False) -> list[dict]:
             for o in officers
         ]
         path.write_text(json.dumps(execs, indent=2))
-        log.info(f"[{ticker}] executives: {len(execs)} officers saved → {path.name}")
+        log.info(f"[{ticker}] executives: {len(execs)} officers saved -> {path.name}")
         return execs
     except Exception as e:
         log.error(f"[{ticker}] executives: failed — {e}")
@@ -75,7 +75,7 @@ def fetch_institutional_holders(ticker: str, force: bool = False) -> list[dict]:
                 if hasattr(v, "isoformat"):
                     r[k] = v.isoformat()
         path.write_text(json.dumps(records, indent=2, default=str))
-        log.info(f"[{ticker}] institutions: {len(records)} holders → {path.name}")
+        log.info(f"[{ticker}] institutions: {len(records)} holders -> {path.name}")
         return records
     except Exception as e:
         log.error(f"[{ticker}] institutions: failed — {e}")
@@ -84,7 +84,7 @@ def fetch_institutional_holders(ticker: str, force: bool = False) -> list[dict]:
 
 def run(ticker: str, force: bool = False) -> dict:
     ticker = ticker.upper()
-    log.info(f"── P4 START: {ticker} ──")
+    log.info(f"-- P4 START: {ticker} --")
 
     executives   = fetch_executives(ticker, force=force)
     institutions = fetch_institutional_holders(ticker, force=force)
@@ -97,6 +97,6 @@ def run(ticker: str, force: bool = False) -> dict:
         "executives":   executives,
         "institutions": institutions,
     }, indent=2, default=str))
-    log.info(f"── P4 DONE: {ticker} ──")
+    log.info(f"-- P4 DONE: {ticker} --")
 
     return {"ticker": ticker, "executives": executives, "institutions": institutions}

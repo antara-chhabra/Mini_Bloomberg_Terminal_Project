@@ -13,6 +13,7 @@
 2026-02-20 10:06:11,463  INFO      p1_market_financials  [NVDA] balance: fetching...
 2026-02-20 10:06:11,753  INFO      p1_market_financials  [NVDA] cashflow: fetching...
 2026-02-20 10:06:11,997  INFO      p1_market_financials  [NVDA] metrics: fetching...
+<<<<<<< HEAD
 2026-02-22 20:34:26,557  INFO      p1_market_financials  [NFLX] prices: fetching (2y)...
 2026-02-22 20:34:28,249  INFO      p1_market_financials  [NFLX] income: fetching...
 2026-02-22 20:34:28,484  INFO      p1_market_financials  [NFLX] balance: fetching...
@@ -43,3 +44,81 @@
 2026-02-24 22:22:56,285  INFO      p1_market_financials  [META] balance: fetching...
 2026-02-24 22:22:56,547  INFO      p1_market_financials  [META] cashflow: fetching...
 2026-02-24 22:22:56,860  INFO      p1_market_financials  [META] metrics: fetching...
+=======
+2026-02-20 17:08:18,913  INFO      p1_market_financials  ── P1 START: AAPL ──
+2026-02-20 17:08:18,913  INFO      p1_market_financials  [AAPL] prices: cache hit
+2026-02-20 17:08:18,918  INFO      p1_market_financials  [AAPL] income: cache hit
+2026-02-20 17:08:18,920  INFO      p1_market_financials  [AAPL] balance: cache hit
+2026-02-20 17:08:18,921  INFO      p1_market_financials  [AAPL] cashflow: cache hit
+2026-02-20 17:08:18,923  INFO      p1_market_financials  [AAPL] metrics: cache hit
+2026-02-20 17:08:18,929  INFO      p1_market_financials  [AAPL] derived: saved → AAPL_derived.csv
+2026-02-20 17:08:18,931  INFO      p1_market_financials  [AAPL] JSON summary → AAPL_p1_summary.json
+2026-02-20 17:08:18,931  INFO      p1_market_financials  ── P1 DONE: AAPL ──
+2026-02-20 17:55:54,987  INFO      p1_market_financials  ── P1 START: AAPL ──
+2026-02-20 17:55:54,987  INFO      p1_market_financials  [AAPL] prices: cache hit
+2026-02-20 17:55:54,999  INFO      p1_market_financials  [AAPL] income: cache hit
+2026-02-20 17:55:55,002  INFO      p1_market_financials  [AAPL] balance: cache hit
+2026-02-20 17:55:55,003  INFO      p1_market_financials  [AAPL] cashflow: cache hit
+2026-02-20 17:55:55,005  INFO      p1_market_financials  [AAPL] metrics: cache hit
+2026-02-20 17:55:55,018  INFO      p1_market_financials  [AAPL] derived: saved → AAPL_derived.csv
+2026-02-20 17:55:55,019  INFO      p1_market_financials  [AAPL] JSON summary → AAPL_p1_summary.json
+2026-02-20 17:55:55,019  INFO      p1_market_financials  ── P1 DONE: AAPL ──
+2026-02-20 17:58:10,247  INFO      p1_market_financials  ── P1 START: NFLX ──
+2026-02-20 17:58:10,247  INFO      p1_market_financials  [NFLX] prices: fetching (2y)...
+2026-02-20 17:58:10,247  ERROR     p1_market_financials  [NFLX] prices: failed — No module named 'yfinance'
+2026-02-20 17:58:10,250  INFO      p1_market_financials  [NFLX] income: fetching...
+2026-02-20 17:58:10,250  ERROR     p1_market_financials  [NFLX] income: failed — No module named 'yfinance'
+2026-02-20 17:58:10,250  INFO      p1_market_financials  [NFLX] balance: fetching...
+2026-02-20 17:58:10,250  ERROR     p1_market_financials  [NFLX] balance: failed — No module named 'yfinance'
+2026-02-20 17:58:10,250  INFO      p1_market_financials  [NFLX] cashflow: fetching...
+2026-02-20 17:58:10,250  ERROR     p1_market_financials  [NFLX] cashflow: failed — No module named 'yfinance'
+2026-02-20 17:58:10,251  INFO      p1_market_financials  [NFLX] metrics: fetching...
+2026-02-20 17:58:10,251  ERROR     p1_market_financials  [NFLX] metrics: failed — No module named 'yfinance'
+2026-02-20 17:58:10,252  INFO      p1_market_financials  [NFLX] JSON summary → NFLX_p1_summary.json
+2026-02-20 17:58:10,252  INFO      p1_market_financials  ── P1 DONE: NFLX ──
+>>>>>>> 42cf9682ffda9902bcefaac70ae262921ce4a621
+2026-02-24 22:40:07,669  INFO      p1_market_financials  [AMD] prices: fetching (2y)...
+2026-02-24 22:40:10,547  INFO      p1_market_financials  [AMD] income: fetching...
+2026-02-24 22:40:11,466  INFO      p1_market_financials  [AMD] balance: fetching...
+2026-02-24 22:40:11,975  INFO      p1_market_financials  [AMD] cashflow: fetching...
+2026-02-24 22:40:12,254  INFO      p1_market_financials  [AMD] metrics: fetching...
+2026-02-24 22:45:26,033  INFO      p1_market_financials  [NFLX] prices: cache hit
+2026-02-24 22:45:26,079  INFO      p1_market_financials  [NFLX] income: cache hit
+2026-02-24 22:45:26,099  INFO      p1_market_financials  [NFLX] balance: cache hit
+2026-02-24 22:45:26,103  INFO      p1_market_financials  [NFLX] cashflow: cache hit
+2026-02-24 22:45:26,119  INFO      p1_market_financials  [NFLX] metrics: cache hit
+2026-02-24 23:02:33,806  INFO      p1_market_financials  [NFLX] prices: fetching (2y)...
+2026-02-24 23:02:48,050  INFO      p1_market_financials  [NFLX] income: fetching...
+2026-02-24 23:02:48,536  INFO      p1_market_financials  [NFLX] balance: fetching...
+2026-02-24 23:02:48,887  INFO      p1_market_financials  [NFLX] cashflow: fetching...
+2026-02-24 23:02:49,239  INFO      p1_market_financials  [NFLX] metrics: fetching...
+2026-02-24 23:13:08,841  INFO      p1_market_financials  [NFLX] prices: cache hit
+2026-02-24 23:13:08,962  INFO      p1_market_financials  [NFLX] income: cache hit
+2026-02-24 23:13:08,979  INFO      p1_market_financials  [NFLX] balance: cache hit
+2026-02-24 23:13:08,987  INFO      p1_market_financials  [NFLX] cashflow: cache hit
+2026-02-24 23:13:09,004  INFO      p1_market_financials  [NFLX] metrics: cache hit
+2026-02-24 23:22:59,523  INFO      p1_market_financials  -- P1 START: NFLX --
+2026-02-24 23:22:59,529  INFO      p1_market_financials  [NFLX] prices: cache hit
+2026-02-24 23:22:59,564  INFO      p1_market_financials  [NFLX] income: cache hit
+2026-02-24 23:22:59,581  INFO      p1_market_financials  [NFLX] balance: cache hit
+2026-02-24 23:22:59,593  INFO      p1_market_financials  [NFLX] cashflow: cache hit
+2026-02-24 23:22:59,596  INFO      p1_market_financials  [NFLX] metrics: cache hit
+2026-02-24 23:22:59,636  INFO      p1_market_financials  [NFLX] derived: saved -> NFLX_derived.csv
+2026-02-24 23:22:59,650  INFO      p1_market_financials  [NFLX] JSON summary -> NFLX_p1_summary.json
+2026-02-24 23:22:59,650  INFO      p1_market_financials  -- P1 DONE: NFLX --
+2026-02-24 23:58:53,751  INFO      p1_market_financials  -- P1 START: NFLX --
+2026-02-24 23:58:53,751  INFO      p1_market_financials  [NFLX] prices: cache hit
+2026-02-24 23:58:53,765  INFO      p1_market_financials  [NFLX] income: cache hit
+2026-02-24 23:58:53,769  INFO      p1_market_financials  [NFLX] balance: cache hit
+2026-02-24 23:58:53,772  INFO      p1_market_financials  [NFLX] cashflow: cache hit
+2026-02-24 23:58:53,777  INFO      p1_market_financials  [NFLX] metrics: cache hit
+2026-02-24 23:58:53,792  INFO      p1_market_financials  [NFLX] derived: saved -> NFLX_derived.csv
+2026-02-24 23:58:53,796  INFO      p1_market_financials  [NFLX] JSON summary -> NFLX_p1_summary.json
+2026-02-25 00:02:39,518  INFO      p1_market_financials  -- P1 START: NFLX --
+2026-02-25 00:02:39,518  INFO      p1_market_financials  [NFLX] prices: cache hit
+2026-02-25 00:02:39,529  INFO      p1_market_financials  [NFLX] income: cache hit
+2026-02-25 00:02:39,534  INFO      p1_market_financials  [NFLX] balance: cache hit
+2026-02-25 00:02:39,537  INFO      p1_market_financials  [NFLX] cashflow: cache hit
+2026-02-25 00:02:39,539  INFO      p1_market_financials  [NFLX] metrics: cache hit
+2026-02-25 00:02:39,554  INFO      p1_market_financials  [NFLX] derived: saved -> NFLX_derived.csv
+2026-02-25 00:02:39,558  INFO      p1_market_financials  [NFLX] JSON summary -> NFLX_p1_summary.json

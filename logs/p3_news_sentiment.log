@@ -1,6 +1,7 @@
 2026-02-20 04:07:38,703  INFO      p3_news_sentiment  [AAPL] news: fetching...
 2026-02-20 04:08:53,965  INFO      p3_news_sentiment  [AMZN] news: fetching...
 2026-02-20 10:06:14,253  INFO      p3_news_sentiment  [NVDA] news: fetching...
+<<<<<<< HEAD
 2026-02-22 20:34:30,835  INFO      p3_news_sentiment  [NFLX] news: fetching...
 2026-02-22 20:34:31,013  ERROR     p3_news_sentiment  [NFLX] news: failed � name 'content' is not defined
 2026-02-24 21:56:41,982  INFO      p3_news_sentiment  [MSFT] news: fetching via EventRegistry SDK (keyword='Microsoft')...
@@ -16,3 +17,36 @@
 2026-02-24 22:23:01,518  INFO      p3_news_sentiment  [META] news: fetching via EventRegistry SDK (keyword='Meta')...
 2026-02-24 22:23:01,520  INFO      p3_news_sentiment  Initialising EventRegistry client (key ends: ...56f1)
 2026-02-24 22:23:02,701  INFO      p3_news_sentiment  [META] concept_uri=http://en.wikipedia.org/wiki/Metal  category_uri=news/Business
+=======
+2026-02-20 17:08:20,203  INFO      p3_news_sentiment  ── P3 START: AAPL ──
+2026-02-20 17:08:20,204  INFO      p3_news_sentiment  [AAPL] news: fetching...
+2026-02-20 17:08:20,204  ERROR     p3_news_sentiment  [AAPL] news: failed — No module named 'yfinance'
+2026-02-20 17:08:20,204  INFO      p3_news_sentiment  ── P3 DONE: AAPL ──
+2026-02-20 17:55:55,021  INFO      p3_news_sentiment  ── P3 START: AAPL ──
+2026-02-20 17:55:55,021  INFO      p3_news_sentiment  [AAPL] news: fetching...
+2026-02-20 17:55:55,021  ERROR     p3_news_sentiment  [AAPL] news: failed — No module named 'yfinance'
+2026-02-20 17:55:55,021  INFO      p3_news_sentiment  ── P3 DONE: AAPL ──
+2026-02-20 17:58:11,762  INFO      p3_news_sentiment  ── P3 START: NFLX ──
+2026-02-20 17:58:11,763  INFO      p3_news_sentiment  [NFLX] news: fetching...
+2026-02-20 17:58:11,763  ERROR     p3_news_sentiment  [NFLX] news: failed — No module named 'yfinance'
+2026-02-20 17:58:11,763  INFO      p3_news_sentiment  ── P3 DONE: NFLX ──
+>>>>>>> 42cf9682ffda9902bcefaac70ae262921ce4a621
+2026-02-24 22:40:17,361  INFO      p3_news_sentiment  [AMD] news: fetching via EventRegistry SDK (keyword='AMD')...
+2026-02-24 22:40:17,374  INFO      p3_news_sentiment  Initialising EventRegistry client (key ends: ...56f1)
+2026-02-24 22:40:18,760  INFO      p3_news_sentiment  [AMD] concept_uri=http://en.wikipedia.org/wiki/Ahmedabad  category_uri=news/Business
+2026-02-24 22:45:26,316  INFO      p3_news_sentiment  [NFLX] news: fetching via EventRegistry SDK (keyword='Netflix')...
+2026-02-24 22:45:26,325  INFO      p3_news_sentiment  Initialising EventRegistry client (key ends: ...56f1)
+2026-02-24 22:45:27,915  INFO      p3_news_sentiment  [NFLX] concept_uri=http://en.wikipedia.org/wiki/Netflix  category_uri=news/Business
+2026-02-24 23:02:54,979  INFO      p3_news_sentiment  [NFLX] news: fetching via EventRegistry SDK (keyword='Netflix')...
+2026-02-24 23:02:54,979  INFO      p3_news_sentiment  Initialising EventRegistry client (key ends: ...56f1)
+2026-02-24 23:02:56,985  INFO      p3_news_sentiment  [NFLX] concept_uri=http://en.wikipedia.org/wiki/Netflix  category_uri=news/Business
+2026-02-24 23:13:09,309  INFO      p3_news_sentiment  [NFLX] news: cache hit
+2026-02-24 23:22:59,661  INFO      p3_news_sentiment  -- P3 START: NFLX --
+2026-02-24 23:22:59,663  INFO      p3_news_sentiment  [NFLX] news: cache hit
+2026-02-24 23:22:59,678  INFO      p3_news_sentiment  -- P3 DONE:  NFLX --
+2026-02-24 23:58:53,812  INFO      p3_news_sentiment  -- P3 START: NFLX --
+2026-02-24 23:58:53,813  INFO      p3_news_sentiment  [NFLX] news: cache hit
+2026-02-24 23:58:53,822  INFO      p3_news_sentiment  -- P3 DONE:  NFLX --
+2026-02-25 00:02:39,573  INFO      p3_news_sentiment  -- P3 START: NFLX --
+2026-02-25 00:02:39,575  INFO      p3_news_sentiment  [NFLX] news: cache hit
+2026-02-25 00:02:39,582  INFO      p3_news_sentiment  -- P3 DONE:  NFLX --

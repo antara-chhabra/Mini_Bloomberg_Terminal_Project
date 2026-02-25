@@ -1,7 +1,7 @@
 {
   "pipeline": "p4_executives",
   "ticker": "NFLX",
-  "fetched_at": "2026-02-24T21:58:13.252254",
+  "fetched_at": "2026-02-25T00:02:39.592812",
   "executives": [
     {
       "ticker": "NFLX",
@@ -12,7 +12,7 @@
       "exercised_value": 206021120,
       "unexercised_value": 1415606272,
       "source": "yfinance",
-      "fetched_at": "2026-02-22T20:34:31.226694"
+      "fetched_at": "2026-02-24T23:03:07.167629"
     },
     {
       "ticker": "NFLX",
@@ -23,7 +23,7 @@
       "exercised_value": 32708016,
       "unexercised_value": 427340448,
       "source": "yfinance",
-      "fetched_at": "2026-02-22T20:34:31.226704"
+      "fetched_at": "2026-02-24T23:03:07.167629"
     },
     {
       "ticker": "NFLX",
@@ -34,7 +34,7 @@
       "exercised_value": 26574712,
       "unexercised_value": 204458736,
       "source": "yfinance",
-      "fetched_at": "2026-02-22T20:34:31.226707"
+      "fetched_at": "2026-02-24T23:03:07.167629"
     },
     {
       "ticker": "NFLX",
@@ -45,7 +45,7 @@
       "exercised_value": 0,
       "unexercised_value": 107027248,
       "source": "yfinance",
-      "fetched_at": "2026-02-22T20:34:31.226710"
+      "fetched_at": "2026-02-24T23:03:07.167629"
     },
     {
       "ticker": "NFLX",
@@ -56,7 +56,7 @@
       "exercised_value": 38790456,
       "unexercised_value": 87438464,
       "source": "yfinance",
-      "fetched_at": "2026-02-22T20:34:31.226713"
+      "fetched_at": "2026-02-24T23:03:07.167629"
     },
     {
       "ticker": "NFLX",
@@ -67,7 +67,7 @@
       "exercised_value": 0,
       "unexercised_value": 0,
       "source": "yfinance",
-      "fetched_at": "2026-02-22T20:34:31.226715"
+      "fetched_at": "2026-02-24T23:03:07.167629"
     },
     {
       "ticker": "NFLX",
@@ -78,7 +78,7 @@
       "exercised_value": 0,
       "unexercised_value": 0,
       "source": "yfinance",
-      "fetched_at": "2026-02-22T20:34:31.226718"
+      "fetched_at": "2026-02-24T23:03:07.167629"
     },
     {
       "ticker": "NFLX",
@@ -89,7 +89,7 @@
       "exercised_value": 0,
       "unexercised_value": 0,
       "source": "yfinance",
-      "fetched_at": "2026-02-22T20:34:31.226720"
+      "fetched_at": "2026-02-24T23:03:07.167629"
     },
     {
       "ticker": "NFLX",
@@ -100,7 +100,7 @@
       "exercised_value": 0,
       "unexercised_value": 0,
       "source": "yfinance",
-      "fetched_at": "2026-02-22T20:34:31.226722"
+      "fetched_at": "2026-02-24T23:03:07.167629"
     },
     {
       "ticker": "NFLX",
@@ -111,7 +111,7 @@
       "exercised_value": 0,
       "unexercised_value": 0,
       "source": "yfinance",
-      "fetched_at": "2026-02-22T20:34:31.226724"
+      "fetched_at": "2026-02-24T23:03:07.167629"
     }
   ],
   "institutions": [
@@ -120,7 +120,7 @@
       "Holder": "Vanguard Group Inc",
       "pctHeld": 0.0924,
       "Shares": 390014981,
-      "Value": 30682477841,
+      "Value": 30436769474,
       "pctChange": 0.0125
     },
     {
@@ -128,7 +128,7 @@
       "Holder": "Blackrock Inc.",
       "pctHeld": 0.0825,
       "Shares": 348145717,
-      "Value": 27388622918,
+      "Value": 27169292073,
       "pctChange": 0.0021
     },
     {
@@ -136,7 +136,7 @@
       "Holder": "FMR, LLC",
       "pctHeld": 0.0464,
       "Shares": 195829757,
-      "Value": 15405926624,
+      "Value": 15282554415,
       "pctChange": -0.0721
     },
     {
@@ -144,7 +144,7 @@
       "Holder": "State Street Corporation",
       "pctHeld": 0.0419,
       "Shares": 176780995,
-      "Value": 13907360552,
+      "Value": 13795989011,
       "pctChange": 0.0276
     },
     {
@@ -152,7 +152,7 @@
       "Holder": "Geode Capital Management, LLC",
       "pctHeld": 0.023599999,
       "Shares": 99598678,
-      "Value": 7835427815,
+      "Value": 7772680922,
       "pctChange": -0.008
     },
     {
@@ -160,7 +160,7 @@
       "Holder": "Capital World Investors",
       "pctHeld": 0.0212,
       "Shares": 89341444,
-      "Value": 7028491235,
+      "Value": 6972206371,
       "pctChange": -0.040900003
     },
     {
@@ -168,7 +168,7 @@
       "Holder": "Price (T.Rowe) Associates Inc",
       "pctHeld": 0.020399999,
       "Shares": 86058878,
-      "Value": 6770251774,
+      "Value": 6716034917,
       "pctChange": -0.2142
     },
     {
@@ -176,7 +176,7 @@
       "Holder": "Morgan Stanley",
       "pctHeld": 0.0202,
       "Shares": 85349973,
-      "Value": 6714482219,
+      "Value": 6660711971,
       "pctChange": 0.003
     },
     {
@@ -184,7 +184,7 @@
       "Holder": "JPMORGAN CHASE & CO",
       "pctHeld": 0.015,
       "Shares": 63535182,
-      "Value": 4998312651,
+      "Value": 4958285661,
       "pctChange": -0.6441
     },
     {
@@ -192,7 +192,7 @@
       "Holder": "NORGES BANK",
       "pctHeld": 0.0147,
       "Shares": 61894705,
-      "Value": 4869256329,
+      "Value": 4830262834,
       "pctChange": 0.045300003
     }
   ]

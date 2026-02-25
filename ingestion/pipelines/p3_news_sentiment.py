@@ -19,6 +19,9 @@ TICKER_TO_COMPANY: dict[str, str] = {
     "AMZN":  "Amazon",
     "META":  "Meta",
     "NVDA":  "NVIDIA",
+    "AMD":   "Advanced Micro Devices",  
+    "CRM":   "Salesforce",               
+    "NFLX":  "Netflix",
 }
 
 # Shared EventRegistry client — initialised once at module load.
@@ -116,7 +119,7 @@ def fetch_news(
             "articles":   articles,
         }
         path.write_text(json.dumps(out, indent=2))
-        log.info(f"[{ticker}] news: {len(articles)} articles → {path.name}")
+        log.info(f"[{ticker}] news: {len(articles)} articles -> {path.name}")
         return articles
 
     except Exception as e:
@@ -126,7 +129,7 @@ def fetch_news(
 
 def run(ticker: str, keyword: str | None = None, force: bool = False) -> dict:
     ticker = ticker.upper()
-    log.info(f"── P3 START: {ticker} ──")
+    log.info(f"-- P3 START: {ticker} --")
     articles = fetch_news(ticker, keyword=keyword, force=force)
-    log.info(f"── P3 DONE:  {ticker} ──")
+    log.info(f"-- P3 DONE:  {ticker} --")
     return {"ticker": ticker, "articles": articles}
