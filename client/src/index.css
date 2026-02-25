@@ -1,71 +1,74 @@
+/* src/index.css
+ *
+ * In Tailwind v4, this file IS the configuration.
+ * No tailwind.config.js needed.
+ *
+ * RULES that fix the "@tailwindcss/vite Cannot convert undefined" error:
+ *   1. @import "tailwindcss" must be the very first line
+ *   2. Custom colors go in @theme using --color-* prefix
+ *   3. Custom fonts go in @theme using --font-family-* prefix (NOT --font-*)
+ *   4. NEVER use @apply inside @layer base — use raw CSS var() instead
+ *      (@apply in @layer base crashes v4 because theme isn't resolved yet)
+ */
+
 @import "tailwindcss";
 
+@theme {
+  /* Colors — the --color-* prefix makes these available as Tailwind utilities:
+     bg-terminal-bg, text-terminal-positive, border-terminal-border, etc. */
+  --color-terminal-bg:       #020617;
+  --color-terminal-surface:  #0f172a;
+  --color-terminal-border:   #1e293b;
+  --color-terminal-muted:    #475569;
+  --color-terminal-accent:   #f59e0b;
+  --color-terminal-positive: #4ade80;
+  --color-terminal-negative: #f87171;
+  --color-terminal-info:     #0ea5e9;
+  --color-terminal-purple:   #a78bfa;
+  --color-terminal-cyan:     #22d3ee;
 
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-/* 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  /* Font — must be --font-family-* to register as font-mono utility */
+  --font-family-mono: "JetBrains Mono", "Fira Code", "Consolas", monospace;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
-  a:hover {
-    color: #747bff;
+
+  html {
+    font-size: 16px;
+    color-scheme: dark;
   }
-  button {
-    background-color: #f9f9f9;
+
+  /* Use raw var() here — NOT @apply — to avoid the v4 crash */
+  body {
+    background-color: var(--color-terminal-bg);
+    color: white;
+    font-family: var(--font-family-mono);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-} */
+
+  /* Keyboard focus ring — WCAG 2.1 AA requirement */
+  :focus-visible {
+    outline: 2px solid var(--color-terminal-accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Respect OS "reduce motion" setting */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
