@@ -127,7 +127,7 @@ def fetch_filings(ticker: str, form_type: str = "10-K", limit: int = 10, force: 
                 break
 
         path.write_text(json.dumps(results, indent=2))
-        log.info(f"[{ticker}] {form_type}: {len(results)} filings saved → {path.name}")
+        log.info(f"[{ticker}] {form_type}: {len(results)} filings saved -> {path.name}")
         return results
 
     except Exception as e:
@@ -143,7 +143,7 @@ def run(ticker: str, force: bool = False) -> dict:
     Fetches 10-K, 10-Q, and 8-K filings and saves structured records.
     """
     ticker = ticker.upper()
-    log.info(f"── P2 START: {ticker} ──")
+    log.info(f"-- P2 START: {ticker} --")
 
     all_filings = []
     for form in ["10-K", "10-Q", "8-K"]:
@@ -159,7 +159,7 @@ def run(ticker: str, force: bool = False) -> dict:
         "fetched_at": datetime.now().isoformat(),
         "filings":    all_filings,
     }, indent=2))
-    log.info(f"[{ticker}] {len(all_filings)} total filings → {out.name}")
-    log.info(f"── P2 DONE: {ticker} ──")
+    log.info(f"[{ticker}] {len(all_filings)} total filings -> {out.name}")
+    log.info(f"-- P2 DONE: {ticker} --")
 
     return {"ticker": ticker, "filings": all_filings}
