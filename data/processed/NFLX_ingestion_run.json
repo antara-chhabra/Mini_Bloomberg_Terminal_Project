@@ -1,23 +1,130 @@
 {
   "ticker": "NFLX",
-  "started_at": "2026-02-20T17:58:10.246989",
+  "started_at": "2026-02-25T01:48:01.672752",
   "p1": {
     "ticker": "NFLX",
-    "prices": "Empty DataFrame\nColumns: []\nIndex: []",
-    "income": "Empty DataFrame\nColumns: []\nIndex: []",
-    "balance": "Empty DataFrame\nColumns: []\nIndex: []",
-    "cashflow": "Empty DataFrame\nColumns: []\nIndex: []",
-    "metrics": {},
-    "derived": "Empty DataFrame\nColumns: []\nIndex: []",
+    "prices": "                        Close               High                 Low               Open    Volume\nPrice                                                                                            \nTicker                   NFLX               NFLX                NFLX               NFLX      NFLX\nDate                      NaN                NaN                 NaN                NaN       NaN\n2024-02-26  58.76499938964844  59.07500076293945   58.32699966430664  58.35599899291992  23937000\n2024-02-27  60.16699981689453   60.5359992980957  59.233001708984375               59.5  44894000\n2024-02-28  59.64799880981445  59.81700134277344  59.000999450683594  59.57899856567383  26052000\n...                       ...                ...                 ...                ...       ...\n2026-02-18  77.98999786376953  78.31999969482422   76.27999877929688  77.31999969482422  29883100\n2026-02-19               77.0  78.69999694824219   76.58999633789062              77.75  30139200\n2026-02-20  78.66999816894531   78.8499984741211    76.4000015258789  76.61000061035156  32411300\n2026-02-23   76.0199966430664  77.83000183105469   75.01000213623047  77.79000091552734  38363000\n2026-02-24  78.04000091552734  78.12000274658203   75.20999908447266   75.7300033569336  32848100\n\n[503 rows x 5 columns]",
+    "income": "      Tax Effect Of Unusual Items  Tax Rate For Calcs  Normalized EBITDA  ...  Cost Of Revenue  Total Revenue  Operating Revenue\nYear                                                                      ...                                                   \n2025                          0.0        1.370000e-10          30.254617  ...        23.275329      45.183036          45.183036\n2024                          0.0        1.300000e-10          26.314821  ...        21.038464      39.000966          39.000966\n2023                          0.0        1.300000e-10          21.508387  ...        19.715368      33.723297          33.723297\n2022                          0.0        1.500000e-10          20.332955  ...        19.168285      31.615550          31.615550\n2021                          NaN                 NaN                NaN  ...              NaN            NaN                NaN\n\n[5 rows x 40 columns]",
+    "balance": "      Treasury Shares Number  Ordinary Shares Number  Share Issued  ...  Cash And Cash Equivalents  Cash Equivalents  Cash Financial\nYear                                                                ...                                                             \n2025                0.346541                4.222162      4.568703  ...                   9.033681          3.824971        5.208710\n2024                0.247843                4.277571      4.525414  ...                   7.804733          2.940526        4.864207\n2023                0.160783                4.327596      4.488379  ...                   7.116913          1.130284        5.986629\n2022                0.015645                4.453468      4.469113  ...                   5.147176          1.075592        4.071584\n2021                     NaN                     NaN           NaN  ...                        NaN               NaN             NaN\n\n[5 rows x 62 columns]",
+    "cashflow": "      Free Cash Flow  Repurchase Of Capital Stock  ...  Net Foreign Currency Exchange Gain Loss  Net Income From Continuing Operations\nYear                                               ...                                                                                \n2025        9.461053                    -9.127167  ...                                 0.072348                              10.981201\n2024        6.921826                    -6.263746  ...                                -0.121539                               8.711631\n2023        6.925749                    -6.045347  ...                                 0.176296                               5.407990\n2022        1.618528                     0.000000  ...                                -0.353111                               4.491924\n2021             NaN                          NaN  ...                                      NaN                                    NaN\n\n[5 rows x 53 columns]",
+    "metrics": {
+      "name": "Netflix, Inc.",
+      "sector": "Communication Services",
+      "industry": "Entertainment",
+      "employees": "16000",
+      "website": "https://www.netflix.com",
+      "country": "United States",
+      "price": "78.04",
+      "week_52_high": "134.115",
+      "week_52_low": "75.01",
+      "market_cap_b": "331.04",
+      "pe_trailing": "30.84585",
+      "pe_forward": "20.424988",
+      "ps_ratio": "7.326578",
+      "pb_ratio": "12.379442",
+      "ev_ebitda": "24.701",
+      "eps_ttm": "2.53",
+      "gross_margin_pct": "48.49",
+      "net_margin_pct": "24.3",
+      "op_margin_pct": "24.54",
+      "roe_pct": "42.76",
+      "roa_pct": "15.25",
+      "revenue_growth_pct": "17.6",
+      "earnings_growth_pct": "32.7",
+      "debt_equity": "63.782",
+      "current_ratio": "1.186",
+      "quick_ratio": "1.061",
+      "dividend_yield_pct": null,
+      "payout_ratio_pct": "0.0",
+      "beta": "1.712",
+      "fetched_at": "2026-02-24T23:02:49.472921",
+      "source": "yfinance"
+    },
+    "derived": "      revenue_b  revenue_yoy_pct  net_margin_pct  gross_margin_pct  fcf_margin_pct  debt_equity\nYear                                                                                           \n2021        NaN              NaN             NaN               NaN             NaN          NaN\n2022      31.62              NaN           14.21             39.37            5.12         0.69\n2023      33.72             6.67           16.04             41.54           20.54         0.71\n2024      39.00            15.65           22.34             46.06           17.75         0.63\n2025      45.18            15.85           24.30             48.49           20.94         0.54",
     "summary": {
       "pipeline": "p1_market_financials",
       "ticker": "NFLX",
-      "name": null,
-      "sector": null,
-      "industry": null,
-      "fetched_at": null,
-      "metrics": {},
-      "derived": {}
+      "name": "Netflix, Inc.",
+      "sector": "Communication Services",
+      "industry": "Entertainment",
+      "fetched_at": "2026-02-24T23:02:49.472921",
+      "metrics": {
+        "name": "Netflix, Inc.",
+        "sector": "Communication Services",
+        "industry": "Entertainment",
+        "employees": "16000",
+        "website": "https://www.netflix.com",
+        "country": "United States",
+        "price": "78.04",
+        "week_52_high": "134.115",
+        "week_52_low": "75.01",
+        "market_cap_b": "331.04",
+        "pe_trailing": "30.84585",
+        "pe_forward": "20.424988",
+        "ps_ratio": "7.326578",
+        "pb_ratio": "12.379442",
+        "ev_ebitda": "24.701",
+        "eps_ttm": "2.53",
+        "gross_margin_pct": "48.49",
+        "net_margin_pct": "24.3",
+        "op_margin_pct": "24.54",
+        "roe_pct": "42.76",
+        "roa_pct": "15.25",
+        "revenue_growth_pct": "17.6",
+        "earnings_growth_pct": "32.7",
+        "debt_equity": "63.782",
+        "current_ratio": "1.186",
+        "quick_ratio": "1.061",
+        "dividend_yield_pct": null,
+        "payout_ratio_pct": "0.0",
+        "beta": "1.712",
+        "fetched_at": "2026-02-24T23:02:49.472921",
+        "source": "yfinance"
+      },
+      "derived": {
+        "revenue_b": {
+          "2021": null,
+          "2022": 31.62,
+          "2023": 33.72,
+          "2024": 39.0,
+          "2025": 45.18
+        },
+        "revenue_yoy_pct": {
+          "2021": null,
+          "2022": null,
+          "2023": 6.67,
+          "2024": 15.65,
+          "2025": 15.85
+        },
+        "net_margin_pct": {
+          "2021": null,
+          "2022": 14.21,
+          "2023": 16.04,
+          "2024": 22.34,
+          "2025": 24.3
+        },
+        "gross_margin_pct": {
+          "2021": null,
+          "2022": 39.37,
+          "2023": 41.54,
+          "2024": 46.06,
+          "2025": 48.49
+        },
+        "fcf_margin_pct": {
+          "2021": null,
+          "2022": 5.12,
+          "2023": 20.54,
+          "2024": 17.75,
+          "2025": 20.94
+        },
+        "debt_equity": {
+          "2021": null,
+          "2022": 0.69,
+          "2023": 0.71,
+          "2024": 0.63,
+          "2025": 0.54
+        }
+      }
     }
   },
   "p2": {
@@ -33,7 +140,7 @@
         "description": "10-K",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/nflx-20251231.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.030455"
+        "fetched_at": "2026-02-24T23:02:52.444763"
       },
       {
         "ticker": "NFLX",
@@ -45,7 +152,7 @@
         "description": "10-K",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000044/nflx-20241231.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.030485"
+        "fetched_at": "2026-02-24T23:02:52.444763"
       },
       {
         "ticker": "NFLX",
@@ -57,7 +164,7 @@
         "description": "10-K",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528024000030/nflx-20231231.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.030504"
+        "fetched_at": "2026-02-24T23:02:52.444763"
       },
       {
         "ticker": "NFLX",
@@ -69,7 +176,7 @@
         "description": "10-K",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528023000035/nflx-20221231.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.030534"
+        "fetched_at": "2026-02-24T23:02:52.444763"
       },
       {
         "ticker": "NFLX",
@@ -81,7 +188,7 @@
         "description": "10-Q",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000406/nflx-20250930.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.389246"
+        "fetched_at": "2026-02-24T23:02:53.624515"
       },
       {
         "ticker": "NFLX",
@@ -93,7 +200,7 @@
         "description": "10-Q",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000323/nflx-20250630.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.389259"
+        "fetched_at": "2026-02-24T23:02:53.624515"
       },
       {
         "ticker": "NFLX",
@@ -105,7 +212,7 @@
         "description": "10-Q",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000176/nflx-20250331.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.389267"
+        "fetched_at": "2026-02-24T23:02:53.624515"
       },
       {
         "ticker": "NFLX",
@@ -117,7 +224,7 @@
         "description": "10-Q",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528024000287/nflx-20240930.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.389279"
+        "fetched_at": "2026-02-24T23:02:53.624515"
       },
       {
         "ticker": "NFLX",
@@ -129,7 +236,7 @@
         "description": "10-Q",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528024000200/nflx-20240630.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.389285"
+        "fetched_at": "2026-02-24T23:02:53.624515"
       },
       {
         "ticker": "NFLX",
@@ -141,7 +248,7 @@
         "description": "10-Q",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528024000128/nflx-20240331.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.389289"
+        "fetched_at": "2026-02-24T23:02:53.624515"
       },
       {
         "ticker": "NFLX",
@@ -153,7 +260,7 @@
         "description": "10-Q",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528023000273/nflx-20230930.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.389299"
+        "fetched_at": "2026-02-24T23:02:53.624515"
       },
       {
         "ticker": "NFLX",
@@ -165,7 +272,7 @@
         "description": "10-Q",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528023000198/nflx-20230630.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.389304"
+        "fetched_at": "2026-02-24T23:02:53.624515"
       },
       {
         "ticker": "NFLX",
@@ -177,7 +284,7 @@
         "description": "10-Q",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528023000120/nflx-20230331.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.389309"
+        "fetched_at": "2026-02-24T23:02:53.624515"
       },
       {
         "ticker": "NFLX",
@@ -189,7 +296,7 @@
         "description": "8-K",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000033/nflx-20260120.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.762055"
+        "fetched_at": "2026-02-24T23:02:54.926242"
       },
       {
         "ticker": "NFLX",
@@ -201,7 +308,7 @@
         "description": "8-K",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000119312526015951/d37713d8k.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.762064"
+        "fetched_at": "2026-02-24T23:02:54.926242"
       },
       {
         "ticker": "NFLX",
@@ -213,7 +320,7 @@
         "description": "8-K",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000119312525327462/d82688d8k.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.762067"
+        "fetched_at": "2026-02-24T23:02:54.926242"
       },
       {
         "ticker": "NFLX",
@@ -225,7 +332,7 @@
         "description": "8-K",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000119312525308651/d65144d8k.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.762069"
+        "fetched_at": "2026-02-24T23:02:54.926242"
       },
       {
         "ticker": "NFLX",
@@ -237,7 +344,7 @@
         "description": "8-K",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000450/nflx-20251114.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.762071"
+        "fetched_at": "2026-02-24T23:02:54.926242"
       },
       {
         "ticker": "NFLX",
@@ -249,7 +356,7 @@
         "description": "8-K",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000408/nflx-20251030.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.762074"
+        "fetched_at": "2026-02-24T23:02:54.926242"
       },
       {
         "ticker": "NFLX",
@@ -261,7 +368,7 @@
         "description": "8-K",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000407/nflx-20251030.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.762079"
+        "fetched_at": "2026-02-24T23:02:54.926242"
       },
       {
         "ticker": "NFLX",
@@ -273,7 +380,7 @@
         "description": "8-K",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000404/nflx-20251021.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.762080"
+        "fetched_at": "2026-02-24T23:02:54.926242"
       },
       {
         "ticker": "NFLX",
@@ -285,7 +392,7 @@
         "description": "8-K",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000322/nflx-20250717.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.762084"
+        "fetched_at": "2026-02-24T23:02:54.926242"
       },
       {
         "ticker": "NFLX",
@@ -297,7 +404,7 @@
         "description": "8-K",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000287/nflx-20250622.htm",
         "source": "sec_edgar",
-        "fetched_at": "2026-02-20T17:58:11.762087"
+        "fetched_at": "2026-02-24T23:02:54.926242"
       }
     ]
   },
@@ -307,8 +414,200 @@
   },
   "p4": {
     "ticker": "NFLX",
-    "executives": [],
-    "institutions": []
+    "executives": [
+      {
+        "ticker": "NFLX",
+        "name": "Mr. Wilmot Reed Hastings Jr.",
+        "title": "Co-Founder & Chairman",
+        "year_born": 1960,
+        "total_pay": 502215,
+        "exercised_value": 206021120,
+        "unexercised_value": 1415606272,
+        "source": "yfinance",
+        "fetched_at": "2026-02-24T23:03:07.167629"
+      },
+      {
+        "ticker": "NFLX",
+        "name": "Mr. Theodore A. Sarandos",
+        "title": "Co-CEO, President & Director",
+        "year_born": 1965,
+        "total_pay": 16961458,
+        "exercised_value": 32708016,
+        "unexercised_value": 427340448,
+        "source": "yfinance",
+        "fetched_at": "2026-02-24T23:03:07.167629"
+      },
+      {
+        "ticker": "NFLX",
+        "name": "Mr. Gregory K. Peters",
+        "title": "Co-CEO, President & Director",
+        "year_born": 1971,
+        "total_pay": 15613091,
+        "exercised_value": 26574712,
+        "unexercised_value": 204458736,
+        "source": "yfinance",
+        "fetched_at": "2026-02-24T23:03:07.167629"
+      },
+      {
+        "ticker": "NFLX",
+        "name": "Mr. Spencer Adam Neumann",
+        "title": "Chief Financial Officer",
+        "year_born": 1970,
+        "total_pay": 7647331,
+        "exercised_value": 0,
+        "unexercised_value": 107027248,
+        "source": "yfinance",
+        "fetched_at": "2026-02-24T23:03:07.167629"
+      },
+      {
+        "ticker": "NFLX",
+        "name": "Mr. David  Hyman J.D.",
+        "title": "Chief Legal Officer & Secretary",
+        "year_born": 1966,
+        "total_pay": 7515647,
+        "exercised_value": 38790456,
+        "unexercised_value": 87438464,
+        "source": "yfinance",
+        "fetched_at": "2026-02-24T23:03:07.167629"
+      },
+      {
+        "ticker": "NFLX",
+        "name": "Mr. Jeffrey William Karbowski",
+        "title": "Chief Accounting Officer",
+        "year_born": 1979,
+        "total_pay": null,
+        "exercised_value": 0,
+        "unexercised_value": 0,
+        "source": "yfinance",
+        "fetched_at": "2026-02-24T23:03:07.167629"
+      },
+      {
+        "ticker": "NFLX",
+        "name": "Ms. Elizabeth  Stone",
+        "title": "Chief Product & Technology Officer",
+        "year_born": null,
+        "total_pay": null,
+        "exercised_value": 0,
+        "unexercised_value": 0,
+        "source": "yfinance",
+        "fetched_at": "2026-02-24T23:03:07.167629"
+      },
+      {
+        "ticker": "NFLX",
+        "name": "Mr. Spencer  Wang",
+        "title": "Vice President of Finance, Corporate Development & Investor Relations",
+        "year_born": null,
+        "total_pay": null,
+        "exercised_value": 0,
+        "unexercised_value": 0,
+        "source": "yfinance",
+        "fetched_at": "2026-02-24T23:03:07.167629"
+      },
+      {
+        "ticker": "NFLX",
+        "name": "Ms. Dani  Dudeck",
+        "title": "Chief Communications Officer",
+        "year_born": null,
+        "total_pay": null,
+        "exercised_value": 0,
+        "unexercised_value": 0,
+        "source": "yfinance",
+        "fetched_at": "2026-02-24T23:03:07.167629"
+      },
+      {
+        "ticker": "NFLX",
+        "name": "Ms. Marian  Lee",
+        "title": "Chief Marketing Officer",
+        "year_born": 1980,
+        "total_pay": null,
+        "exercised_value": 0,
+        "unexercised_value": 0,
+        "source": "yfinance",
+        "fetched_at": "2026-02-24T23:03:07.167629"
+      }
+    ],
+    "institutions": [
+      {
+        "Date Reported": "2025-12-31T00:00:00",
+        "Holder": "Vanguard Group Inc",
+        "pctHeld": 0.0924,
+        "Shares": 390014981,
+        "Value": 30436769474,
+        "pctChange": 0.0125
+      },
+      {
+        "Date Reported": "2025-12-31T00:00:00",
+        "Holder": "Blackrock Inc.",
+        "pctHeld": 0.0825,
+        "Shares": 348145717,
+        "Value": 27169292073,
+        "pctChange": 0.0021
+      },
+      {
+        "Date Reported": "2025-12-31T00:00:00",
+        "Holder": "FMR, LLC",
+        "pctHeld": 0.0464,
+        "Shares": 195829757,
+        "Value": 15282554415,
+        "pctChange": -0.0721
+      },
+      {
+        "Date Reported": "2025-12-31T00:00:00",
+        "Holder": "State Street Corporation",
+        "pctHeld": 0.0419,
+        "Shares": 176780995,
+        "Value": 13795989011,
+        "pctChange": 0.0276
+      },
+      {
+        "Date Reported": "2025-12-31T00:00:00",
+        "Holder": "Geode Capital Management, LLC",
+        "pctHeld": 0.023599999,
+        "Shares": 99598678,
+        "Value": 7772680922,
+        "pctChange": -0.008
+      },
+      {
+        "Date Reported": "2025-12-31T00:00:00",
+        "Holder": "Capital World Investors",
+        "pctHeld": 0.0212,
+        "Shares": 89341444,
+        "Value": 6972206371,
+        "pctChange": -0.040900003
+      },
+      {
+        "Date Reported": "2025-12-31T00:00:00",
+        "Holder": "Price (T.Rowe) Associates Inc",
+        "pctHeld": 0.020399999,
+        "Shares": 86058878,
+        "Value": 6716034917,
+        "pctChange": -0.2142
+      },
+      {
+        "Date Reported": "2025-12-31T00:00:00",
+        "Holder": "Morgan Stanley",
+        "pctHeld": 0.0202,
+        "Shares": 85349973,
+        "Value": 6660711971,
+        "pctChange": 0.003
+      },
+      {
+        "Date Reported": "2025-12-31T00:00:00",
+        "Holder": "JPMORGAN CHASE & CO",
+        "pctHeld": 0.015,
+        "Shares": 63535182,
+        "Value": 4958285661,
+        "pctChange": -0.6441
+      },
+      {
+        "Date Reported": "2025-12-31T00:00:00",
+        "Holder": "NORGES BANK",
+        "pctHeld": 0.0147,
+        "Shares": 61894705,
+        "Value": 4830262834,
+        "pctChange": 0.045300003
+      }
+    ]
   },
-  "finished_at": "2026-02-20T17:58:11.764183"
+  "finished_at": "2026-02-25T01:48:06.421766"
 }

@@ -1,7 +1,7 @@
 {
   "pipeline": "p4_executives",
   "ticker": "AAPL",
-  "fetched_at": "2026-02-20T17:55:55.022285",
+  "fetched_at": "2026-02-25T00:19:09.127752",
   "executives": [
     {
       "ticker": "AAPL",
@@ -12,7 +12,7 @@
       "exercised_value": 0,
       "unexercised_value": 0,
       "source": "yfinance",
-      "fetched_at": "2026-02-20T04:07:39.002032"
+      "fetched_at": "2026-02-25T00:19:09.038149"
     },
     {
       "ticker": "AAPL",
@@ -23,7 +23,7 @@
       "exercised_value": 0,
       "unexercised_value": 0,
       "source": "yfinance",
-      "fetched_at": "2026-02-20T04:07:39.002049"
+      "fetched_at": "2026-02-25T00:19:09.038149"
     },
     {
       "ticker": "AAPL",
@@ -34,7 +34,7 @@
       "exercised_value": 0,
       "unexercised_value": 0,
       "source": "yfinance",
-      "fetched_at": "2026-02-20T04:07:39.002056"
+      "fetched_at": "2026-02-25T00:19:09.038149"
     },
     {
       "ticker": "AAPL",
@@ -45,7 +45,7 @@
       "exercised_value": 0,
       "unexercised_value": 0,
       "source": "yfinance",
-      "fetched_at": "2026-02-20T04:07:39.002060"
+      "fetched_at": "2026-02-25T00:19:09.038149"
     },
     {
       "ticker": "AAPL",
@@ -56,7 +56,7 @@
       "exercised_value": 0,
       "unexercised_value": 0,
       "source": "yfinance",
-      "fetched_at": "2026-02-20T04:07:39.002064"
+      "fetched_at": "2026-02-25T00:19:09.038149"
     },
     {
       "ticker": "AAPL",
@@ -67,7 +67,7 @@
       "exercised_value": 0,
       "unexercised_value": 0,
       "source": "yfinance",
-      "fetched_at": "2026-02-20T04:07:39.002069"
+      "fetched_at": "2026-02-25T00:19:09.038149"
     },
     {
       "ticker": "AAPL",
@@ -78,7 +78,7 @@
       "exercised_value": 0,
       "unexercised_value": 0,
       "source": "yfinance",
-      "fetched_at": "2026-02-20T04:07:39.002073"
+      "fetched_at": "2026-02-25T00:19:09.038149"
     },
     {
       "ticker": "AAPL",
@@ -89,7 +89,7 @@
       "exercised_value": 0,
       "unexercised_value": 0,
       "source": "yfinance",
-      "fetched_at": "2026-02-20T04:07:39.002077"
+      "fetched_at": "2026-02-25T00:19:09.038149"
     },
     {
       "ticker": "AAPL",
@@ -100,7 +100,7 @@
       "exercised_value": 0,
       "unexercised_value": 0,
       "source": "yfinance",
-      "fetched_at": "2026-02-20T04:07:39.002081"
+      "fetched_at": "2026-02-25T00:19:09.038149"
     },
     {
       "ticker": "AAPL",
@@ -111,7 +111,7 @@
       "exercised_value": 0,
       "unexercised_value": 0,
       "source": "yfinance",
-      "fetched_at": "2026-02-20T04:07:39.002085"
+      "fetched_at": "2026-02-25T00:19:09.038149"
     }
   ],
   "institutions": [
@@ -120,7 +120,7 @@
       "Holder": "Vanguard Group Inc",
       "pctHeld": 0.097200006,
       "Shares": 1426283914,
-      "Value": 371661043158,
+      "Value": 388148925248,
       "pctChange": 0.019199999
     },
     {
@@ -128,7 +128,7 @@
       "Holder": "Blackrock Inc.",
       "pctHeld": 0.078600004,
       "Shares": 1154665731,
-      "Value": 300882780679,
+      "Value": 314230748948,
       "pctChange": 0.0073
     },
     {
@@ -136,7 +136,7 @@
       "Holder": "State Street Corporation",
       "pctHeld": 0.041100003,
       "Shares": 604056505,
-      "Value": 157405035961,
+      "Value": 164387946119,
       "pctChange": 0.011
     },
     {
@@ -144,7 +144,7 @@
       "Holder": "Geode Capital Management, LLC",
       "pctHeld": 0.024400001,
       "Shares": 358032517,
-      "Value": 93296108472,
+      "Value": 97434974420,
       "pctChange": 0.0052
     },
     {
@@ -152,7 +152,7 @@
       "Holder": "FMR, LLC",
       "pctHeld": 0.0209,
       "Shares": 307397264,
-      "Value": 80101574925,
+      "Value": 83655095927,
       "pctChange": 0.0137
     },
     {
@@ -160,7 +160,7 @@
       "Holder": "Morgan Stanley",
       "pctHeld": 0.015700001,
       "Shares": 230483035,
-      "Value": 60059266165,
+      "Value": 62723656521,
       "pctChange": 0.006
     },
     {
@@ -168,7 +168,7 @@
       "Holder": "Berkshire Hathaway, Inc",
       "pctHeld": 0.0155,
       "Shares": 227917808,
-      "Value": 59390819348,
+      "Value": 62025555607,
       "pctChange": -0.0432
     },
     {
@@ -176,7 +176,7 @@
       "Holder": "JPMORGAN CHASE & CO",
       "pctHeld": 0.0154,
       "Shares": 225419111,
-      "Value": 58739708917,
+      "Value": 61345560169,
       "pctChange": -0.5237
     },
     {
@@ -184,7 +184,7 @@
       "Holder": "Price (T.Rowe) Associates Inc",
       "pctHeld": 0.0139,
       "Shares": 203499482,
-      "Value": 53027892287,
+      "Value": 55380352012,
       "pctChange": -0.0435
     },
     {
@@ -192,7 +192,7 @@
       "Holder": "NORGES BANK",
       "pctHeld": 0.013099999,
       "Shares": 192255086,
-      "Value": 50097827728,
+      "Value": 52320301920,
       "pctChange": 0.0128999995
     }
   ]

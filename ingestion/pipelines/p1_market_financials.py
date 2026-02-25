@@ -15,6 +15,17 @@ import json
 import pandas as pd
 from pathlib import Path
 from datetime import datetime
+import math
+
+def sanitize(obj):
+    """Replace NaN/Inf with None for valid JSON output."""
+    if isinstance(obj, float) and (math.isnan(obj) or math.isinf(obj)):
+        return None
+    if isinstance(obj, dict):
+        return {k: sanitize(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [sanitize(v) for v in obj]
+    return obj
 
 from ingestion.core.config import RAW_DIR, PROC_DIR, TTL
 from ingestion.core.utils import get_logger, is_stale, pct
@@ -35,14 +46,14 @@ def fetch_price_history(ticker: str, period: str = "2y", force: bool = False) ->
     path = _raw(ticker, f"prices_{period}")
     if not force and not is_stale(path, TTL["market"]):
         log.info(f"[{ticker}] prices: cache hit")
-        return pd.read_csv(path, index_col=0, parse_dates=True)
+        return pd.read_csv(path, index_col=0, parse_dates=True, date_format="ISO8601")
 
     log.info(f"[{ticker}] prices: fetching ({period})...")
     try:
         import yfinance as yf
         df = yf.download(ticker, period=period, auto_adjust=True, progress=False)
         df.to_csv(path)
-        log.info(f"[{ticker}] prices: saved → {path.name}")
+        log.info(f"[{ticker}] prices: saved -> {path.name}")
         return df
     except Exception as e:
         log.error(f"[{ticker}] prices: failed — {e}")
@@ -63,7 +74,7 @@ def fetch_income_statement(ticker: str, force: bool = False) -> pd.DataFrame:
         df.index.name = "Year"
         df = df / 1e9  # → billions
         df.to_csv(path)
-        log.info(f"[{ticker}] income: saved → {path.name}")
+        log.info(f"[{ticker}] income: saved -> {path.name}")
         return df
     except Exception as e:
         log.error(f"[{ticker}] income: failed — {e}")
@@ -84,7 +95,7 @@ def fetch_balance_sheet(ticker: str, force: bool = False) -> pd.DataFrame:
         df.index.name = "Year"
         df = df / 1e9
         df.to_csv(path)
-        log.info(f"[{ticker}] balance: saved → {path.name}")
+        log.info(f"[{ticker}] balance: saved -> {path.name}")
         return df
     except Exception as e:
         log.error(f"[{ticker}] balance: failed — {e}")
@@ -105,7 +116,7 @@ def fetch_cashflow(ticker: str, force: bool = False) -> pd.DataFrame:
         df.index.name = "Year"
         df = df / 1e9
         df.to_csv(path)
-        log.info(f"[{ticker}] cashflow: saved → {path.name}")
+        log.info(f"[{ticker}] cashflow: saved -> {path.name}")
         return df
     except Exception as e:
         log.error(f"[{ticker}] cashflow: failed — {e}")
@@ -166,7 +177,7 @@ def fetch_key_metrics(ticker: str, force: bool = False) -> dict:
             "source":             "yfinance",
         }
         pd.DataFrame.from_dict(metrics, orient="index", columns=["Value"]).to_csv(path)
-        log.info(f"[{ticker}] metrics: saved → {path.name}")
+        log.info(f"[{ticker}] metrics: saved -> {path.name}")
         return metrics
     except Exception as e:
         log.error(f"[{ticker}] metrics: failed — {e}")
@@ -208,7 +219,7 @@ def run(ticker: str, force: bool = False) -> dict:
     Returns structured dict ready for ETL → DynamoDB write.
     """
     ticker = ticker.upper()
-    log.info(f"── P1 START: {ticker} ──")
+    log.info(f"-- P1 START: {ticker} --")
 
     prices   = fetch_price_history(ticker, force=force)
     income   = fetch_income_statement(ticker, force=force)
@@ -221,7 +232,7 @@ def run(ticker: str, force: bool = False) -> dict:
     if not derived.empty:
         out = PROC_DIR / f"{ticker}_derived.csv"
         derived.to_csv(out)
-        log.info(f"[{ticker}] derived: saved → {out.name}")
+        log.info(f"[{ticker}] derived: saved -> {out.name}")
 
     # Save processed JSON summary (feed into RAG / DynamoDB later)
     summary = {
@@ -236,9 +247,8 @@ def run(ticker: str, force: bool = False) -> dict:
     }
     json_path = PROC_DIR / f"{ticker}_p1_summary.json"
     with open(json_path, "w") as f:
-        json.dump(summary, f, indent=2, default=str)
-    log.info(f"[{ticker}] JSON summary → {json_path.name}")
-    log.info(f"── P1 DONE: {ticker} ──")
+        json.dump(sanitize(summary), f, indent=2, default=str)
+    log.info(f"[{ticker}] JSON summary -> {json_path.name}")
 
     return {
         "ticker":   ticker,

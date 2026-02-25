@@ -8,7 +8,7 @@
     "exercised_value": 0,
     "unexercised_value": 0,
     "source": "yfinance",
-    "fetched_at": "2026-02-20T05:16:43.543789"
+    "fetched_at": "2026-02-25T00:28:21.010610"
   },
   {
     "ticker": "MSFT",
@@ -19,7 +19,7 @@
     "exercised_value": 0,
     "unexercised_value": 0,
     "source": "yfinance",
-    "fetched_at": "2026-02-20T05:16:43.543812"
+    "fetched_at": "2026-02-25T00:28:21.010610"
   },
   {
     "ticker": "MSFT",
@@ -30,7 +30,7 @@
     "exercised_value": 0,
     "unexercised_value": 0,
     "source": "yfinance",
-    "fetched_at": "2026-02-20T05:16:43.543821"
+    "fetched_at": "2026-02-25T00:28:21.010610"
   },
   {
     "ticker": "MSFT",
@@ -41,7 +41,7 @@
     "exercised_value": 0,
     "unexercised_value": 0,
     "source": "yfinance",
-    "fetched_at": "2026-02-20T05:16:43.543827"
+    "fetched_at": "2026-02-25T00:28:21.010610"
   },
   {
     "ticker": "MSFT",
@@ -52,7 +52,7 @@
     "exercised_value": 0,
     "unexercised_value": 0,
     "source": "yfinance",
-    "fetched_at": "2026-02-20T05:16:43.543834"
+    "fetched_at": "2026-02-25T00:28:21.010610"
   },
   {
     "ticker": "MSFT",
@@ -63,7 +63,7 @@
     "exercised_value": 0,
     "unexercised_value": 0,
     "source": "yfinance",
-    "fetched_at": "2026-02-20T05:16:43.543841"
+    "fetched_at": "2026-02-25T00:28:21.010610"
   },
   {
     "ticker": "MSFT",
@@ -74,7 +74,7 @@
     "exercised_value": 0,
     "unexercised_value": 0,
     "source": "yfinance",
-    "fetched_at": "2026-02-20T05:16:43.543848"
+    "fetched_at": "2026-02-25T00:28:21.010610"
   },
   {
     "ticker": "MSFT",
@@ -85,7 +85,7 @@
     "exercised_value": 0,
     "unexercised_value": 0,
     "source": "yfinance",
-    "fetched_at": "2026-02-20T05:16:43.543855"
+    "fetched_at": "2026-02-25T00:28:21.010610"
   },
   {
     "ticker": "MSFT",
@@ -96,7 +96,7 @@
     "exercised_value": 0,
     "unexercised_value": 0,
     "source": "yfinance",
-    "fetched_at": "2026-02-20T05:16:43.543862"
+    "fetched_at": "2026-02-25T00:28:21.010610"
   },
   {
     "ticker": "MSFT",
@@ -107,6 +107,6 @@
     "exercised_value": 0,
     "unexercised_value": 0,
     "source": "yfinance",
-    "fetched_at": "2026-02-20T05:16:43.543869"
+    "fetched_at": "2026-02-25T00:28:21.010610"
   }
 ]
