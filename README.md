@@ -245,18 +245,19 @@ To add a new ticker: `python -m ingestion.run_ingestion --ticker <TICKER>`
 
 ## Team
 
-Built by the TQT Quant Team — **Antara, Jayani, Jeremy, Jay, Dora, Diana**
+Built by the TQT Team — **Rudy, Antara, Jayani, Jeremy, Jay, Dora, Diana**
 
 | Focus area | Team members |
 |---|---|
 | Web scraping + data pipelines + frontend | Antara, Jeremy, Jay |
 | UI/UX design (Figma) | Dora, Jeremy |
 | AWS infrastructure | Antara, Diana, Dora, Jayani, Jeremy |
+| Mentor and Advisor | Rudy |
 
 ---
 
 ## Pitch Deck
 
-[View on Google Slides](https://docs.google.com/presentation/d/1jLcxTmaq09rHVb9nUOH1IE7bj2pJqOpfK3PtmrF8Uqw/edit)
+[View on Google Slides](https://docs.google.com/presentation/d/1jLcxTmaq09rHVb9nUOH1IE7bj2pJqOpfK3PtmrF8Uqw/edit?usp=sharing)
 
 ---
