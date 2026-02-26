@@ -248,7 +248,7 @@ Built by the TQT Quant Team — **Antara, Jayani, Jeremy, Jay, Dora, Diana**
 
 | Focus area | Team members |
 |---|---|
-| Web scraping + data pipelines | Jayani, Antara, Jeremy |
+| Web scraping + data pipelines + frontend | Antara, Jeremy, Jay |
 | UI/UX design (Figma) | Dora, Jeremy |
 | AWS infrastructure | Antara, Diana, Dora, Jayani, Jeremy |
 
