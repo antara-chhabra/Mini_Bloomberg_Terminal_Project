@@ -258,6 +258,6 @@ Built by the TQT Team — **Rudy, Antara, Jayani, Jeremy, Jay, Dora, Diana**
 
 ## Pitch Deck
 
-[View on Google Slides](https://docs.google.com/presentation/d/1jLcxTmaq09rHVb9nUOH1IE7bj2pJqOpfK3PtmrF8Uqw/edit?usp=sharing)
+[View on Google Slides](https://docs.google.com/presentation/d/1v0U1fd9CvyQx9_Gaj-bKHnZTUdDT0zIHoGwg1sRCYak/edit?usp=sharing)
 
 ---
